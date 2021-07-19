@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="color: maroon;">שיעורי בית תרגיל 2</h1>
+    <form id="form1">
+        <p>מלא את השדות הבאים</p>
+        <div class="detail">
+            <label for="fname">שם פרטי</label>
+            <input type="text" name="fname" id="fname" required>
+            <label for="lname">שם משפחה</label>
+            <input type="text" name="lname" id="lname">
+            <label for="email">כתובת אימייל</label>
+            <input type="email" name="email" id="email" required>
+            <label for="id">ת.ז</label>
+            <input type="number" name="id" id="id" max="999999999" min="111111111" required>
+            <label for="msg">כתוב הודעה</label>
+            <textarea name="msg" id="msg" cols="22" rows="8" required>טקסט </textarea>
+        </div>
+
+        <p>מין:</p>
+        <div class="gender">
+            <input type="radio" name="gen" id="female" value="נקבה">
+            <label for="female">נקבה</label><br>
+            <input type="radio" name="gen" id="male" value="זכר" checked>
+            <label for="male">זכר</label><br>
+            <input type="radio" name="gen" id="else" value="אחר">
+            <label for="else">אחר</label>
+        </div>
+        <input type="submit" value="שלח" class="send">
+    </form>
+
+
+</body>
+
+</html>
